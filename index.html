@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Minesweeper</title>
+    <link href="./resources/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+<!-- HEADER -->
+    <header>
+      <h1>Minesweeper</h1>
+    </header>
+
+    <article>
+      <!-- SECTION 1: Game Area -->
+      <section id="gamestate_display">
+        <div id="face_container">
+          <img src="./resources/smile.png" id="face" alt="Face Display">
+        </div>
+        <div id="mine_counter_container">
+
+        </div>
+      </section>
+      <!-- SECTION 2:  -->
+      <section id="game_area">
+        
+        <div id="settings">
+          <button id="reset_button">Reset Board</button>
+          <form id="settings_form">
+            <label for="size_slider">Board Size</label>
+            
+            <input type="range" id="size_slider" name="size_slider" 
+            min="8" max="16" value ="12" step="1" 
+            oninput="this.nextElementSibling.value = this.value">
+            
+            <output>12</output>
+            <br>
+            <label for="mode_selector">No-Guessing Mode</label>
+            
+            <input type="checkbox" id="mode_selector" name="mode_selector" 
+            checked>
+
+          </form>
+          <p>Note: Board must be reset for changes to take effect.</p>
+        </div>
+      </section>
+    </article>
+  
+  <script src="./resources/scripts/minesweeper.js"></script>
+  </body>
+</html>
