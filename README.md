@@ -20,9 +20,9 @@ Controls:
 
 
 Potential Future Additions:
-- Further optimize solvability checking functionality
-- Hint functionality
-- Add more settings/customization
+- Further optimize solvability-checking
+- Add hint functionality
+- Add more settings options
 - Remake UI using React
 
 
